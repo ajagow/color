@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     user = {'username': 'Miguel'}
-    return render_template('base.html', title='Home', user=user)
+    return render_template('colorpicker.html', title='Home', user=user)
 
 
 if __name__ == '__main__':
