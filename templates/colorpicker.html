@@ -4,7 +4,7 @@
 {#    <h1>Hi, {{ user.username }}!</h1>#}
 {#    <button type="button" class="btn btn-primary">Primary</button>#}
 
-    <div class="container">
+    <div class="container center">
 
     <div class="row">
             <div class="col-lg">
@@ -16,7 +16,7 @@
             <div class="col-lg">
 
                  <div class="form-group">
-                    <label for="selectColor">Example multiple select</label>
+                    <label for="selectColor">Select Hex Position</label>
                     <select id="selectColor" class="custom-select">
                         <option value="1Box" selected>#1</option>
                         <option value="2Box">#2</option>
@@ -24,46 +24,56 @@
                         <option value="4Box">#4</option>
                         <option value="5Box">#5</option>
                     </select>
-                    <button id="hexButton" type="button" class="btn btn-primary">Select</button>
+{#                    <button id="hexButton" type="button" class="btn btn-primary">Select</button>#}
                   </div>
 
                 <div>Preview:</div>
                 <div id="preview"></div>
-
-                <div class="container">
-                    <div id="1Box" class="box"></div>
-                    <div id="2Box" class="box"></div>
-                    <div id="3Box" class="box"></div>
-                    <div id="4Box" class="box"></div>
-                    <div id="5Box" class="box"></div>
-                </div>
-
-                <div>Color:</div>
-
-
-
-                <div class="input-group mb-3">
-
-
-                  <span class="input-group-text" id="basic-addon1">R</span>
-
-                  <input id="rVal" type="text" class="form-control"  aria-label="idk" aria-describedby="basic-addon1">
-
-                    <span class="input-group-text" id="basic-addon1">G</span>
-
-                  <input id="gVal" type="text" class="form-control"  aria-label="idk" aria-describedby="basic-addon1">
-
-                     <span class="input-group-text" id="basic-addon1">B</span>
-
-                  <input id="bVal" type="text" class="form-control"  aria-label="idk" aria-describedby="basic-addon1">
-                   <span class="input-group-text" id="basic-addon1">Hex</span>
-
-                  <input id="hexVal" type="text" class="form-control"  aria-label="idk" aria-describedby="basic-addon1">
+                <div class="row hex-container">
+                    <div id="1Box" class="box">
+                        <p></p>
+                    </div>
+                    <div id="2Box" class="box">
+                         <p></p>
+                    </div>
+                    <div id="3Box" class="box">
+                         <p></p>
+                    </div>
+                    <div id="4Box" class="box">
+                         <p></p>
+                    </div>
+                    <div id="5Box" class="box">
+                         <p></p>
+                    </div>
 
 
                 </div>
 
-                <hr />
+
+
+
+
+{#                <div class="input-group mb-3">#}
+{##}
+{##}
+{#                  <span class="input-group-text" id="basic-addon1">R</span>#}
+{##}
+{#                  <input id="rVal" type="text" class="form-control"  aria-label="idk" aria-describedby="basic-addon1">#}
+{##}
+{#                    <span class="input-group-text" id="basic-addon1">G</span>#}
+{##}
+{#                  <input id="gVal" type="text" class="form-control"  aria-label="idk" aria-describedby="basic-addon1">#}
+{##}
+{#                     <span class="input-group-text" id="basic-addon1">B</span>#}
+{##}
+{#                  <input id="bVal" type="text" class="form-control"  aria-label="idk" aria-describedby="basic-addon1">#}
+{#                   <span class="input-group-text" id="basic-addon1">Hex</span>#}
+{##}
+{#                  <input id="hexVal" type="text" class="form-control"  aria-label="idk" aria-describedby="basic-addon1">#}
+{##}
+{##}
+{#                </div>#}
+
 
                 </div>
 

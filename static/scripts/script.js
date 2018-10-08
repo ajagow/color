@@ -4,6 +4,22 @@ var images = [ // predefined array of used images
     '../images/pic1.jpg'];
 var iActiveImage = 0;
 $(function(){
+
+    var rgbToHex = function (rgb) {
+      var hex = Number(rgb).toString(16);
+      if (hex.length < 2) {
+           hex = "0" + hex;
+      }
+      return hex;
+    };
+
+    var fullColorHex = function(r,g,b) {
+      var red = rgbToHex(r);
+      var green = rgbToHex(g);
+      var blue = rgbToHex(b);
+      return red+green+blue;
+    };
+
     // drawing active image
     var image = new Image();
     image.src = $('#pls').attr('src');
@@ -36,18 +52,21 @@ $(function(){
         var canvasY = Math.floor(e.pageY - canvasOffset.top);
         var imageData = ctx.getImageData(canvasX, canvasY, 1, 1);
         var pixel = imageData.data;
-        $('#rVal').val(pixel[0]);
-        $('#gVal').val(pixel[1]);
-        $('#bVal').val(pixel[2]);
-        $('#rgbVal').val(pixel[0]+','+pixel[1]+','+pixel[2]);
-        $('#rgbaVal').val(pixel[0]+','+pixel[1]+','+pixel[2]+','+pixel[3]);
-        var dColor = pixel[2] + 256 * pixel[1] + 65536 * pixel[0];
-        $('#hexVal').val( '#' + dColor.toString(16) );
-        var help = $( "#selectColor" ).val();
-        console.log(help);
-        console.log('#' + dColor.toString(16));
+        // $('#rVal').val(pixel[0]);
+        // $('#gVal').val(pixel[1]);
+        // $('#bVal').val(pixel[2]);
 
-        $('#' + help).css('backgroundColor', '#' + dColor.toString(16));
+        var color = fullColorHex(pixel[0], pixel[1], pixel[2])
+        // $('#rgbVal').val(pixel[0]+','+pixel[1]+','+pixel[2]);
+        // $('#rgbaVal').val(pixel[0]+','+pixel[1]+','+pixel[2]+','+pixel[3]);
+        // var dColor = pixel[2] + 256 * pixel[1] + 65536 * pixel[0];
+        // $('#hexVal').val( '#' + dColor.toString(16) );
+        var help = $( "#selectColor" ).val();
+        //console.log('#' + dColor.toString(16));
+
+        $('#' + help).css('backgroundColor', '#' + color);
+        $('#' + help + ' > p').text('#' + color);
+
     });
 
     $('#hexButton').click(function() {
@@ -58,6 +77,8 @@ $(function(){
         console.log(help);
 
     });
+
+
 
 
 });

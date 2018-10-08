@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="container center">
+{#    <img id="pls" src="{{ filename}}" alt="start"/>#}
+
+    <div class="row">
+{#        <form action="/wordPick" method="post">#}
+{#               <div class="custom-file">#}
+{#                  <input type="file" class="custom-file-input" id="customFile">#}
+{#                  <label class="custom-file-label" for="customFile">Choose file</label>#}
+{#                   <button type="submit" class="btn btn-primary">Submit</button>#}
+{#                </div>#}
+{#        </form>#}
+
+    <form method=post enctype="multipart/form-data">
+{#           <div class="custom-file">#}
+{#                  <input type="file" name="file" class="custom-file-input">#}
+{#                  <label class="custom-file-label" for="customFile">Choose file</label>#}
+{#                   <input type="submit" class="btn btn-primary" value=Upload>Submit</input>#}
+{#                </div>#}
+        <div class="custom-file">
+            <input type=file name=file>
+
+            <span class="custom-file-control form-control-file"></span>
+
+         <input type=submit value=Upload class="btn btn-primary mt-3">
+
+        </div>
+
+    </form>
+
+                <p>or use one of our images</p>
+
+    </div>
+
+
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+
+
+{% endblock %}
