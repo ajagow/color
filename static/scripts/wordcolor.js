@@ -17,4 +17,9 @@ $(function() {
     $('.box').click(function() {
         $('#wordSelector').css('color', $(this).children().text());
     });
+
+    $('#nextPhoto').click(function() {
+        var name = $('#selectPhoto').val();
+        window.location.assign("/colorpicker?name=" + name);
+    });
 });

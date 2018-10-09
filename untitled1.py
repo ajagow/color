@@ -18,7 +18,17 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.secret_key = "super secret key"
 
 @app.route('/')
+def index():
+    return render_template('index.html')
+
+
+@app.route('/colorpicker')
 def hello_world():
+    if 'name' in request.args:
+        name = request.args.get('name');
+        newPath = '/static/images/' + name;
+        session['path'] = newPath
+
     path = session['path']
     print('path: ', path)
     return render_template('colorpicker.html', filename=path)
@@ -28,14 +38,14 @@ def word():
     if request.method == 'POST':
         word = request.form['word']
         session['word'] = word
-        return redirect('/')
+        return redirect('/uploadPhoto')
     return render_template('wordselect.html')
 
 
-@app.route('/wordPick', methods=['POST'])
-def wordPick():
-    word = request.form['word']
-    return render_template('wordselect.html', word=word)
+# @app.route('/wordPick', methods=['POST'])
+# def wordPick():
+#     word = request.form['word']
+#     return render_template('wordselect.html', word=word)
 
 @app.route('/uploadPhoto', methods=['GET', 'POST'])
 def uploadPhoto():
@@ -56,9 +66,14 @@ def uploadPhoto():
             print('path: ', os.path.join(app.config['UPLOAD_FOLDER'], filename))
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             session['photo'] = filename
-            return redirect(url_for('uploadPhoto',
-                                    filename=filename))
-    return render_template('pickFile.html')
+            session['path'] = '../uploads/' + filename
+            return redirect('/colorpicker')
+            # return redirect(url_for('uploadPhoto',
+            #                         filename=filename))
+
+    images = os.listdir(os.path.join(app.static_folder, "images"))
+
+    return render_template('pickFile.html', images=images)
 
 @app.route('/wordcolor')
 def wordColor():
