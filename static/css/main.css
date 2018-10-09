@@ -39,6 +39,7 @@ body {
     height:80px;
     width:80px;
     position: relative;
+    border: 1px lightgrey solid;
 }
 
 .box p {

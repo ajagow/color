@@ -11,7 +11,8 @@
                 <canvas id="panel" width="500" height="333"></canvas>
             </div>
 
-            <img id="pls" src="{{ url_for('static', filename='images/pic2.jpg') }}" style="display: none;" alt="start"/>
+{#            <img id="pls" src="{{ url_for('static', filename='images/pic2.jpg') }}" style="display: none;" alt="start"/>#}
+            <img id="pls" src="{{ filename }}" style="display: none;" alt="start"/>
 
             <div class="col-lg">
 
@@ -29,25 +30,27 @@
 
                 <div>Preview:</div>
                 <div id="preview"></div>
-                <div class="row hex-container">
-                    <div id="1Box" class="box">
-                        <p></p>
+                <div class="row hex-container mt-5">
+                    <div id="1Box" class="box" style="background-color: rgb(255, 255, 255);">
+                        <p>#ffffff</p>
                     </div>
-                    <div id="2Box" class="box">
-                         <p></p>
+                    <div id="2Box" class="box" style="background-color: rgb(255, 255, 255);">
+                         <p>#ffffff</p>
                     </div>
-                    <div id="3Box" class="box">
-                         <p></p>
+                    <div id="3Box" class="box" style="background-color: rgb(255, 255, 255);">
+                         <p>#ffffff</p>
                     </div>
-                    <div id="4Box" class="box">
-                         <p></p>
+                    <div id="4Box" class="box" style="background-color: rgb(255, 255, 255);">
+                         <p>#ffffff</p>
                     </div>
-                    <div id="5Box" class="box">
-                         <p></p>
+                    <div id="5Box" class="box" style="background-color: rgb(255, 255, 255);">
+                         <p>#ffffff</p>
                     </div>
 
 
                 </div>
+
+                 <button id="submitBtn" class="btn btn-primary mt-5" style="float:right">Next</button>
 
 
 
@@ -76,6 +79,7 @@
 
 
                 </div>
+
 
     </div>
 

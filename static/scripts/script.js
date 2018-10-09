@@ -23,10 +23,15 @@ $(function(){
     // drawing active image
     var image = new Image();
     image.src = $('#pls').attr('src');
-    var iwidth =
 
-    image.onload = function () {
-        ctx.drawImage(image, 0, 0, 500, 333); // draw the image on the canvas
+
+
+      image.onload = function () {
+
+    var hRatio = canvas.width / image.width    ;
+    var vRatio = canvas.height / image.height  ;
+    var ratio  = Math.min ( hRatio, vRatio );
+    ctx.drawImage(image, 0,0, image.width, image.height, 0,0,image.width*ratio, image.height*ratio);
     }
 
     console.log(image.width);
@@ -35,6 +40,7 @@ $(function(){
     // creating canvas object
     canvas = document.getElementById('panel');
     ctx = canvas.getContext('2d');
+
 
 
     $('#panel').mousemove(function(e) { // mouse move handler

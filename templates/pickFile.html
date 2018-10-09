@@ -3,7 +3,7 @@
 {% block content %}
 
     <div class="container center">
-{#    <img id="pls" src="{{ filename}}" alt="start"/>#}
+    <img id="pls" src="{{ filename}}" alt="start"/>
 
     <div class="row">
 {#        <form action="/wordPick" method="post">#}
@@ -32,6 +32,12 @@
     </form>
 
                 <p>or use one of our images</p>
+
+        {% for image in images %}
+    <section class="col-md-4 col-sm-6" style="background-color: green;">
+      <a href="{{ url_for('static', filename='images/' + image) }}">{{ image }}</a>
+    </section>
+  {% endfor %}
 
     </div>
 
