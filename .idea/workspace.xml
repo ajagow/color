@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c37ea6df-7cc1-445f-84c8-b6546cc40c07" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/new_file" afterPath="$PROJECT_DIR$/new_file" />
-      <change beforePath="$PROJECT_DIR$/static/css/main.css" afterPath="$PROJECT_DIR$/static/css/main.css" />
-      <change beforePath="$PROJECT_DIR$/static/images/pic1.jpg" afterPath="$PROJECT_DIR$/static/images/pic1.jpg" />
-      <change beforePath="$PROJECT_DIR$/static/scripts/wordcolor.js" afterPath="$PROJECT_DIR$/static/scripts/wordcolor.js" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change beforePath="$PROJECT_DIR$/templates/final.html" afterPath="$PROJECT_DIR$/templates/final.html" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change beforePath="$PROJECT_DIR$/templates/wordcolor.html" afterPath="$PROJECT_DIR$/templates/wordcolor.html" />
-      <change beforePath="$PROJECT_DIR$/untitled1.py" afterPath="$PROJECT_DIR$/untitled1.py" />
-      <change beforePath="$PROJECT_DIR$/userUploads/IMG_4574.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/userUploads/IMG_4586.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/userUploads/asdf.jpg" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -89,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="39" lean-forward="false" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+            <state relative-caret-position="30">
+              <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -171,7 +159,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="251">
@@ -197,6 +185,7 @@
       <find>word</find>
       <find>mages</find>
       <find>wordse</find>
+      <find>.center</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -216,7 +205,6 @@
         <option value="$PROJECT_DIR$/templates/pickFile.html" />
         <option value="$PROJECT_DIR$/templates/colorpicker.html" />
         <option value="$PROJECT_DIR$/templates/userPhoto.html" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/final.html" />
         <option value="src:table:/380bedfc/e13bc35e-ca6d-4c7b-9a7d-1dd2dd5b0d69/main.information" />
@@ -225,6 +213,7 @@
         <option value="$PROJECT_DIR$/static/scripts/wordcolor.js" />
         <option value="$PROJECT_DIR$/templates/wordcolor.html" />
         <option value="$PROJECT_DIR$/static/css/main.css" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
       </list>
     </option>
   </component>
@@ -604,14 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="39" lean-forward="false" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3bb95aa5-52e9-463b-b575-ffd6be51f45e/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -709,6 +690,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
           <caret line="67" column="11" lean-forward="true" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
           <folding />
         </state>
       </provider>
