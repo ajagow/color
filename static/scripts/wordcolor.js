@@ -56,6 +56,27 @@ function getUrlParams( prop ) {
     console.log(x);
     $('#colorFinal').css("color", "#" + x);
 
+    $('#fogToggle').click(function() {
+        $('#fog').css('display','block');
+        var color = $('#wordSelector').css('color');
+        var newColor = rgb2hex(color);
+        console.log("color" + newColor)
+        $('#fog').css('background-color', newColor);
+
+    });
+
+    $('#fog').click(function() {
+        $('#fog').css('display','none');
+
+    });
+
+
+
+    if($('#fog').css('display') == 'none') {
+
+
+    }
+
 
 
 });

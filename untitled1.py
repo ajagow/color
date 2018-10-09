@@ -152,12 +152,10 @@ def list():
 
     print('connection: ', con)
 
-    con.execute("select * from information")
 
     con.row_factory = sql.Row
 
     cur = con.cursor()
-    cur.execute("insert into information(photopath, word, hexColor) VALUES ('../uploads/IMG_4574.jpg', 'beautiful', '#ffffff')")
     cur.execute("select * from information")
 
 

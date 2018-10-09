@@ -4,6 +4,8 @@
 {#    <h1>Hi, {{ user.username }}!</h1>#}
 {#    <button type="button" class="btn btn-primary">Primary</button>#}
 
+    <div id="fog" class="fill" style="display:none">
+        <p class="bg-white text-center">click to exit</p></div>
 
     <div class="container center">
 <div class="container text-center" >
@@ -28,8 +30,10 @@
 {#            <img id="pls" src="{{ url_for('static', filename='images/pic2.jpg') }}" style="display: none;" alt="start"/>#}
 {#            <img id="pls" src="{{ filename }}" style="display: none;" alt="start"/>#}
 
-            <div class="col-lg">
+            <div class="col-lg text-center">
                     <h1 id="wordSelector" class="special_word">{{ word }}</h1>
+
+            <button id="fogToggle" class="btn btn-outline-dark">Fog-ify</button>
 
 
                 <div class="row hex-container mt-5">
