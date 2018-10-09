@@ -109,6 +109,37 @@ def allowed_file(filename):
 def send_file(filename):
     return send_from_directory(UPLOAD_FOLDER, filename)
 
+@app.route('/final')
+def final():
+    color = request.args.get('color')
+    word = session['word']
+    path = session['path']
+    print('color: ', color)
+    print(color, word, path);
+
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    db_path = os.path.join(BASE_DIR, "new_file")
+    # con = sql.connect(db_path)
+
+    try:
+
+        with sql.connect(db_path) as con:
+            cur = con.cursor()
+            cur.execute("INSERT INTO information (photopath, word, hexColor) VALUES(?, ?, ?)", (path, word, color))
+            con.commit()
+            msg = "Record successfully added"
+            print(msg)
+    except:
+        con.rollback()
+        msg = "error in insert operation"
+        print(msg)
+
+    finally:
+        return render_template("final.html", word=word, path=path, color=color)
+        con.close()
+
+
+
 
 @app.route('/list')
 def list():
@@ -136,30 +167,6 @@ def list():
     # print(rows[0]["photopath"])
     return render_template("userPhoto.html", rows=rows)
 
-
-@app.route('/addPhoto', methods=['POST', 'GET'])
-def addrec():
-    if request.method == 'POST':
-        try:
-            nm = request.form['nm']
-            addr = request.form['add']
-            city = request.form['city']
-            pin = request.form['pin']
-
-            with sql.connect("database.db") as con:
-                cur = con.cursor()
-
-                cur.execute("INSERT INTO students (name,addr,city,pin) VALUES(?, ?, ?, ?)",(nm,addr,city,pin))
-
-                con.commit()
-                msg = "Record successfully added"
-        except:
-            con.rollback()
-            msg = "error in insert operation"
-
-        finally:
-            return render_template("result.html", msg=msg)
-            con.close()
 
 
 if __name__ == '__main__':
