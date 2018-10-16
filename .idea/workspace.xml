@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c37ea6df-7cc1-445f-84c8-b6546cc40c07" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/untitled1.py" afterPath="$PROJECT_DIR$/untitled1.py" />
+      <change beforePath="$PROJECT_DIR$/templates/wordselect.html" afterPath="$PROJECT_DIR$/templates/wordselect.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -63,11 +63,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="untitled1.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="untitled1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/untitled1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="135" column="0" lean-forward="true" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+            <state relative-caret-position="-486">
+              <caret line="136" column="0" lean-forward="true" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
               <folding>
                 <marker date="1539673746000" expanded="true" signature="4217:4231" ph="select * fro... students" />
                 <marker date="1539673746000" expanded="true" signature="4217:4242" ph="select * fro... information" />
@@ -77,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wordselect.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="wordselect.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/wordselect.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="196">
+              <caret line="18" column="66" lean-forward="false" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -192,8 +192,8 @@
       <find>val</find>
       <find>box</find>
       <find>lightbox</find>
-      <find>path</find>
       <find>.lightbox</find>
+      <find>path</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -208,7 +208,6 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bb95aa5-52e9-463b-b575-ffd6be51f45e/console.sql" />
         <option value="$PROJECT_DIR$/db.py" />
         <option value="$PROJECT_DIR$/main_sqlite_master.html" />
-        <option value="$PROJECT_DIR$/templates/wordselect.html" />
         <option value="src:table:/380bedfc/e13bc35e-ca6d-4c7b-9a7d-1dd2dd5b0d69/main.information" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e13bc35e-ca6d-4c7b-9a7d-1dd2dd5b0d69/console.sql" />
         <option value="$PROJECT_DIR$/templates/base.html" />
@@ -222,6 +221,7 @@
         <option value="$PROJECT_DIR$/static/css/main.css" />
         <option value="$PROJECT_DIR$/templates/userPhoto.html" />
         <option value="$PROJECT_DIR$/untitled1.py" />
+        <option value="$PROJECT_DIR$/templates/wordselect.html" />
       </list>
     </option>
   </component>
@@ -385,7 +385,7 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.5032802" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32779455" sideWeight="0.49671978" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32779455" sideWeight="0.49671978" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -665,14 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/wordselect.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/userUploads/AAA.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -723,13 +715,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/untitled1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="135" column="0" lean-forward="true" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+        <state relative-caret-position="-486">
+          <caret line="136" column="0" lean-forward="true" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
           <folding>
             <marker date="1539673746000" expanded="true" signature="4217:4231" ph="select * fro... students" />
             <marker date="1539673746000" expanded="true" signature="4217:4242" ph="select * fro... information" />
             <marker date="1539673746000" expanded="true" signature="4861:4973" ph="INSERT INTO information... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/wordselect.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="18" column="66" lean-forward="false" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
+          <folding />
         </state>
       </provider>
     </entry>
