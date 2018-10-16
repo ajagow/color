@@ -7,25 +7,54 @@
 
 
     <h1>Gallery</h1>
-        <p>Welcome!  This is a collection of responses to fog x FLO. </p>
+        <p>Welcome!  This is a collection of responses to Fog x FLO. </p>
 
 
     <div class="row justify-content-center">
 
-                {% for row in rows %}
 
-            <div class="photo_box border_black mt-5">
-            <img id="pls" src="{{ row["photopath"]}}" alt="start"/>
-            <p style="color:{{ row["hexColor"] }}">{{ row["word"]}}</p>
+                 {% for row in rows %}
+
+
+              <a class="lightbox fit_in" href=#{{ row["photopath"] + row["word"] + row["hexColor"]}}>
+               <img src={{ row["photopath"] }}/>
+
                 <div class="row justify-content-center align-items-center">
                     <div class="color_box" style="background-color:{{ row["hexColor"] }}"></div>
-                    <h3>{{ row["word"] }}</h3>
+                    <h3 style="color:{{ row["hexColor"] }}">{{ row["word"] }}</h3>
+
                 </div>
 
 
-         </div>
+                      <div class="row hex-container center flex-row">
+                    <div id="1Box" class="box_sm"style="background-color: {{ row["val1"] }}">
 
-         {% endfor %}
+                    </div>
+                    <div id="2Box" class="box_sm" style="background-color: {{ row["val2"] }}">
+
+                    </div>
+                    <div id="3Box" class="box_sm" style="background-color: {{ row["val3"] }}">
+
+                    </div>
+                    <div id="4Box" class="box_sm" style="background-color: {{ row["val4"] }}">
+
+                    </div>
+                    <div id="5Box" class="box_sm" style="background-color: {{ row["val5"] }}">
+                    </div>
+
+
+                </div>
+
+            </a>
+            <div class="lightbox-target" id={{ row["photopath"] + row["word"] + row["hexColor"]}}>
+               <img id={{ row["photopath"] + row["word"] + row["hexColor"]}} src={{ row["photopath"] }}/>
+               <p id= {{ row["photopath"] + row["word"] + row["hexColor"] + "p"}} style="color:{{ row["hexColor"] }}">{{ row["word"]}}</p>
+
+               <a class="lightbox-close" href="#"></a>
+            </div>
+
+
+        {% endfor %}
 
 
 

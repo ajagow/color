@@ -85,6 +85,13 @@ def wordColor():
     val3 = '#' + request.args.get('val3')
     val4 = '#' + request.args.get('val4')
     val5 = '#' + request.args.get('val5')
+    session['val1'] = val1;
+    session['val2'] = val2;
+    session['val3'] = val3;
+    session['val4'] = val4;
+    session['val5'] = val5;
+
+
     colors = [val1, val2, val3, val4, val5]
     print(colors)
     word = session['word']
@@ -105,7 +112,7 @@ def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
-@app.route('/uploads/<filename>')
+@app.route('/uploads/<filename>/')
 def send_file(filename):
     return send_from_directory(UPLOAD_FOLDER, filename)
 
@@ -114,32 +121,9 @@ def final():
     color = request.args.get('color')
     word = session['word']
     path = session['path']
-    print('color: ', color)
-    print(color, word, path);
+    session['color'] = color
 
-    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-    db_path = os.path.join(BASE_DIR, "new_file")
-    # con = sql.connect(db_path)
-
-    try:
-
-        with sql.connect(db_path) as con:
-            cur = con.cursor()
-            cur.execute("INSERT INTO information (photopath, word, hexColor) VALUES(?, ?, ?)", (path, word, color))
-            con.commit()
-            msg = "Record successfully added"
-            print(msg)
-    except:
-        con.rollback()
-        msg = "error in insert operation"
-        print(msg)
-
-    finally:
-        return render_template("final.html", word=word, path=path, color=color)
-        con.close()
-
-
-
+    return render_template("final.html", word=word, path=path, color=color)
 
 @app.route('/list')
 def list():
@@ -165,6 +149,39 @@ def list():
     # print(rows[0]["photopath"])
     return render_template("userPhoto.html", rows=rows)
 
+@app.route('/submit')
+def submit():
+    word = session['word']
+    path = session['path']
+    val1 = session['val1']
+    val2 = session['val2']
+    val3 = session['val3']
+    val4 = session['val4']
+    val5 = session['val5']
+    color = session['color']
+
+
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    db_path = os.path.join(BASE_DIR, "new_file")
+    # con = sql.connect(db_path)
+
+    try:
+
+        with sql.connect(db_path) as con:
+            cur = con.cursor()
+            cur.execute("INSERT INTO information (photopath, word, hexColor, val1, val2, val3, val4, val5) VALUES(?, ?, ?, ?, ?, ?, ?, ?)",
+                        (path, word, color, val1, val2, val3, val4, val5))
+            con.commit()
+            msg = "Record successfully added"
+            print(msg)
+    except:
+        con.rollback()
+        msg = "error in insert operation"
+        print(msg)
+
+    finally:
+        return redirect('/list')
+        con.close()
 
 
 if __name__ == '__main__':

@@ -5,6 +5,15 @@ var images = [ // predefined array of used images
 var iActiveImage = 0;
 $(function(){
 
+    var box;
+    var clickNum = 1;
+
+    $(".box").click(function() {
+        box =  this.id;
+
+    });
+
+
     var rgbToHex = function (rgb) {
       var hex = Number(rgb).toString(16);
       if (hex.length < 2) {
@@ -70,8 +79,19 @@ $(function(){
         var help = $( "#selectColor" ).val();
         //console.log('#' + dColor.toString(16));
 
-        $('#' + help).css('backgroundColor', '#' + color);
-        $('#' + help + ' > p').text('#' + color);
+        if(box == null) {
+            var click = clickNum + "Box";
+            $('#' + click).css('backgroundColor', '#' + color);
+            $('#' + click + ' > p').text('#' + color);
+
+        }
+        else {
+            $('#' + box).css('backgroundColor', '#' + color);
+            $('#' + box + ' > p').text('#' + color);
+        }
+
+        clickNum+=1;
+
 
     });
 

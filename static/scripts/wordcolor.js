@@ -61,7 +61,7 @@ function getUrlParams( prop ) {
         var color = $('#wordSelector').css('color');
         var newColor = rgb2hex(color);
         console.log("color" + newColor)
-        $('#fog').css('background-color', newColor);
+        $('body').css('background-color', newColor);
 
     });
 
@@ -76,6 +76,23 @@ function getUrlParams( prop ) {
 
 
     }
+
+    while( $('.fit_in p').width() < ($('.fit_in').width() - 90)) {
+        $('.fit_in p').css('font-size', (parseInt($('.fit_in p').css('font-size')) + 1) + "px" );
+    }
+
+    $('.lightbox').click(function() {
+        console.log("clidfksjdlf");
+        while( $('.lightbox-target p').width() < ($('.lightbox-target').width() / 2)) {
+            $('.lightbox-target p').css('font-size', (parseInt($('.lightbox-target p').css('font-size')) + 1) + "px" );
+        }
+    });
+
+    $('.subG').click(function() {
+        var color = x;
+        window.location.assign("/submit?color=" + color);
+    });
+
 
 
 
