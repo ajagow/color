@@ -130,9 +130,7 @@ def list():
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     db_path = os.path.join(BASE_DIR, "new_file")
     con = sql.connect(db_path)
-    path = session['path']
 
-    print('print: ', path)
 
     print('connection: ', con)
 
@@ -145,8 +143,7 @@ def list():
 
     rows = cur.fetchall();
     print('rows', rows)
-    # print(len(rows))
-    # print(rows[0]["photopath"])
+
     return render_template("userPhoto.html", rows=rows)
 
 @app.route('/submit')

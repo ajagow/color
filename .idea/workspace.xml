@@ -2,18 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c37ea6df-7cc1-445f-84c8-b6546cc40c07" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e13bc35e-ca6d-4c7b-9a7d-1dd2dd5b0d69.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/e13bc35e-ca6d-4c7b-9a7d-1dd2dd5b0d69.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/new_file" afterPath="$PROJECT_DIR$/new_file" />
-      <change beforePath="$PROJECT_DIR$/static/css/main.css" afterPath="$PROJECT_DIR$/static/css/main.css" />
-      <change beforePath="$PROJECT_DIR$/static/scripts/script.js" afterPath="$PROJECT_DIR$/static/scripts/script.js" />
-      <change beforePath="$PROJECT_DIR$/static/scripts/wordcolor.js" afterPath="$PROJECT_DIR$/static/scripts/wordcolor.js" />
-      <change beforePath="$PROJECT_DIR$/templates/colorpicker.html" afterPath="$PROJECT_DIR$/templates/colorpicker.html" />
-      <change beforePath="$PROJECT_DIR$/templates/final.html" afterPath="$PROJECT_DIR$/templates/final.html" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change beforePath="$PROJECT_DIR$/templates/pickFile.html" afterPath="$PROJECT_DIR$/templates/pickFile.html" />
-      <change beforePath="$PROJECT_DIR$/templates/userPhoto.html" afterPath="$PROJECT_DIR$/templates/userPhoto.html" />
-      <change beforePath="$PROJECT_DIR$/templates/wordcolor.html" afterPath="$PROJECT_DIR$/templates/wordcolor.html" />
       <change beforePath="$PROJECT_DIR$/untitled1.py" afterPath="$PROJECT_DIR$/untitled1.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/untitled1$untitled1.coverage" NAME="untitled1 Coverage Results" MODIFIED="1539673590820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/untitled1$untitled1.coverage" NAME="untitled1 Coverage Results" MODIFIED="1539673746858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/untitled1$db.coverage" NAME="db Coverage Results" MODIFIED="1539049487723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
@@ -75,15 +63,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="untitled1.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="untitled1.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/untitled1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="114" column="32" lean-forward="false" selection-start-line="114" selection-start-column="32" selection-end-line="114" selection-end-column="32" />
+            <state relative-caret-position="166">
+              <caret line="135" column="0" lean-forward="true" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
               <folding>
-                <marker date="1539672702000" expanded="true" signature="4271:4285" ph="select * fro... students" />
-                <marker date="1539672702000" expanded="true" signature="4271:4296" ph="select * fro... information" />
-                <marker date="1539672702000" expanded="true" signature="4971:5083" ph="INSERT INTO information... " />
+                <marker date="1539673746000" expanded="true" signature="4217:4231" ph="select * fro... students" />
+                <marker date="1539673746000" expanded="true" signature="4217:4242" ph="select * fro... information" />
+                <marker date="1539673746000" expanded="true" signature="4861:4973" ph="INSERT INTO information... " />
               </folding>
             </state>
           </provider>
@@ -121,7 +109,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userPhoto.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="userPhoto.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/userPhoto.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
@@ -231,9 +219,9 @@
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/static/scripts/wordcolor.js" />
         <option value="$PROJECT_DIR$/templates/final.html" />
-        <option value="$PROJECT_DIR$/untitled1.py" />
         <option value="$PROJECT_DIR$/static/css/main.css" />
         <option value="$PROJECT_DIR$/templates/userPhoto.html" />
+        <option value="$PROJECT_DIR$/untitled1.py" />
       </list>
     </option>
   </component>
@@ -710,18 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/untitled1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="114" column="32" lean-forward="false" selection-start-line="114" selection-start-column="32" selection-end-line="114" selection-end-column="32" />
-          <folding>
-            <marker date="1539672702000" expanded="true" signature="4271:4285" ph="select * fro... students" />
-            <marker date="1539672702000" expanded="true" signature="4271:4296" ph="select * fro... information" />
-            <marker date="1539672702000" expanded="true" signature="4971:5083" ph="INSERT INTO information... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -741,6 +717,18 @@
             <element signature="e#1099#1142#0#HTML" expanded="true" />
             <element signature="e#1222#1265#0#HTML" expanded="true" />
             <element signature="e#1345#1388#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="135" column="0" lean-forward="true" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+          <folding>
+            <marker date="1539673746000" expanded="true" signature="4217:4231" ph="select * fro... students" />
+            <marker date="1539673746000" expanded="true" signature="4217:4242" ph="select * fro... information" />
+            <marker date="1539673746000" expanded="true" signature="4861:4973" ph="INSERT INTO information... " />
           </folding>
         </state>
       </provider>
