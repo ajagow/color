@@ -213,7 +213,7 @@ top: 0px;
     flex-direction: column;
     position: relative;
     text-align: center;
-
+    margin: 15px;
 }
 
 .lightbox p {
